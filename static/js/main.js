@@ -10,7 +10,7 @@ try {
   
   
   var noteTextarea = $('#note-textarea');
-  var notesList = $('ul#notes');
+  var notesList = $('#notes');
   var instructions = $('#recording-instructions');
   var noteContent = '';
   
