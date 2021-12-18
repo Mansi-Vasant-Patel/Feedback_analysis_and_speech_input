@@ -1,0 +1,90 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Capture speech here - using JS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d018065ce6.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+   
+  </head>
+  <body>
+    <div class="container">
+        <h1 class="text-center mt-5">Say something here..</h1>
+            <div class="form-group">
+                <textarea id="textbox" rows="6" class="form-group">
+
+                </textarea>
+            </div>
+            <div>
+                <button type="button" id="startbutton" class="form-group"> <i class="fas fa-microphone-alt"></i></button>
+                <p id="instructions">Press the mic button</p>
+            </div>
+           
+    </div>
+  </body>
+
+</html>-->
+
+
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Voice Controlled Notes App</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/d018065ce6.js" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shoelace-css/1.0.0-beta16/shoelace.css">
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js", type="text/javascript"></script>
+
+    </head>
+    <body class="container-fluid">
+        <div class="container">
+            <br><br>
+            <h1 style="text-align: center;">Tell us about our sevice / food today..</h1><br>
+            
+
+            <div class="app"> 
+           
+                <div class="input-single">
+                  <form action="{{ url_for("predict")}}" method="post">
+                  <center> <textarea id="note-textarea" name="note-textarea" placeholder="Record your feedback here by pressing the start button below." rows="6" style="width: 50%;"></textarea></center> 
+                </div> 
+                <center> 
+                
+                <button id="start-record-btn" title="Start Recording" style="background-color: #00607E;">START <i class="fas fa-microphone-alt"></i></button>
+                <button id="pause-record-btn" title="Pause Recording"  style="background-color: #00607E;">STOP <i class="fas fa-microphone-slash"></i></button>
+                
+                <br>
+                <button id="save-note-btn" name = "save-note-btn" type="submit" title="Save Note"  style="background-color: #00607E;">SAVE <i class="fas fa-save"></i></button>
+              
+                 
+              </form>
+                </center> <br><br>
+                
+                <center> <p id="recording-instructions"></p></center> 
+                
+               <!-- <h3>My Notes</h3> -->
+                <ul id="notes">
+                    <!--<li>
+                       <p class="no-notes">You don't have any notes.</p> 
+                    </li> -->
+                </ul>
+
+            </div>
+            <p>{{value}}</p>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="{{ url_for('static', filename='js/main.js') }}"></script>   
+        <script src="{{ url_for('static', filename='js/FileSaver.js') }}"></script>   
+
+    </body>
+</html>

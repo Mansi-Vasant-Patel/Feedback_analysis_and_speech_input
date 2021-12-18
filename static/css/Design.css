@@ -1,0 +1,397 @@
+html{
+    max-width: 1770px;
+}
+body{
+    background-color:#FFFFFF;
+
+}
+body {
+	margin: 0;
+}
+
+.row{
+    padding: 0px;
+}
+
+.container-fluid{
+    padding: 0px;
+}
+#heading{
+    position: relative;
+width: 185px;
+height: 60px;
+left: 51.79px;      
+top: 35.61px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 36px;
+/* identical to box height */
+
+
+color:#00607E;
+
+}
+
+#Forecasting{
+    position:relative;
+width: 154.96px;
+height: 40px;
+left: 149.86px;
+top: 26.61px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 36px;
+
+color: rgba(0, 0, 0, 0.67);
+}
+
+#Dashboard{
+    position: relative;
+width: 154.96px;
+height: 40px;
+left: 99.81px;
+top: 26.61px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 36px;
+
+color: rgba(0, 0, 0, 0.67);
+}
+
+#Wordcloud{
+    position: relative;
+width: 181.02px;
+height: 40px;
+left: 39.77px;
+top: 26.61px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 36px;
+
+color: rgba(0, 0, 0, 0.67);
+}
+
+#Analysis{
+/* Feedback Analysis */
+
+
+position: relative;
+width: 201.91px;
+height: 40px;
+top: 26.61px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 36px;
+
+color: rgba(0, 0, 0, 0.67);
+
+}
+
+.block{
+    position: absolute;
+width: 100%;
+height: 453.39px;
+
+top: 92.47px;
+
+background: #00607E;
+
+}
+.Customo{
+    position: absolute;
+width: 554px;
+height: 180px;
+left: 105.6px;
+top: 55.33px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 90px;
+line-height: 180px;
+/* identical to box height */
+
+
+color: #F2F2F2;
+}
+
+.content{
+    position: absolute;
+width: 830.81px;
+height: 218.06px;
+left: 101.31px;
+top: 235.93px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 22px;
+line-height: 45px;
+
+color: #F2F2F2;
+
+}
+
+.feedbackimage{
+    position: absolute;
+width: 401px;
+height: 401px;
+left: 1003.76px;
+top: 30.83px;
+}
+
+.Salesprediction{
+    position: relative;
+width: 309.14px;
+height: 309.14px;
+left: 328.36px;
+top: 627.45px;
+
+background: #F2F2F2;
+box-shadow: -7px 8px 20px 6px rgba(0, 96, 126, 0.14);
+
+}
+
+.FeedbackAnalysis{
+    position: relative;
+width: 309.14px;
+height: 309.14px;
+left: 828.36px;
+top: 307.45px;
+
+background: #F2F2F2;
+box-shadow: -7px 8px 20px 6px rgba(0, 96, 126, 0.14);
+
+}
+
+.sales{
+    position: absolute;
+width: 85.01px;
+height: 85.01px;
+left: 110.42px;
+top: 67.44px;
+
+background: url(sales.png);
+}
+
+#Forecasting-Sales{
+    position: relative;
+width: 299.68px;
+height: 57.14px;
+left: 8.09px;
+top: 179.46px;
+
+font-family: Poppins;
+font-style: medium;
+font-weight: medium;
+font-size: 18px;
+line-height: 27px;
+text-align: center;
+
+color: #000000;
+}
+
+.insights{
+    position: absolute;
+width: 299.68px;
+height: 57.14px;
+left: 8.09px;
+top: 219.46px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 27px;
+text-align: center;
+
+color: #000000;
+
+}
+
+
+.feedbackimg{
+    position: absolute;
+width: 85.01px;
+height: 85.01px;
+left: 110.42px;
+top: 67.44px;
+
+background: url(sales.png);
+}
+
+#Feedback-Analysis{
+    position: relative;
+width: 299.68px;
+height: 57.14px;
+left: 18.09px;
+top: 179.46px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: medium;
+font-size: 18px;
+line-height: 27px;
+text-align: center;
+
+color: #000000;
+}
+
+
+.feedbacktext{
+    position: absolute;
+width: 299.68px;
+height: 57.14px;
+left: 8.09px;
+top: 229.46px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 27px;
+text-align: center;
+
+color: #000000;
+
+}
+
+
+.Heading{
+    position: absolute;
+width: 328.37px;
+height: 68.85px;
+left: 51.41px;
+top: 113px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 28px;
+line-height: 72px;
+
+color: #263238;
+}
+
+#salesDashboard1{
+    position: absolute;
+    width: 204.96px;
+    height: 40px;
+    left: 624.81px;
+    top: 26.61px;
+    
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 36px;
+    
+    color: #00607E;
+}
+
+.underline{
+    width: 12%;
+    margin-top: 55px;
+    margin-left: 596px;
+    border-width: 1px;
+    background-color: #00607E;
+
+}
+
+#heading1{
+    position: absolute;
+width: 185px;
+height: 60px;
+left: 71.79px;      
+top: 26.61px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 36px;
+/* identical to box height */
+
+
+color:#00607E;
+
+}
+
+#Forecasting1{
+    position: absolute;
+width: 204.96px;
+height: 40px;
+left: 409.86px;
+top: 26.61px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 36px;
+
+color: rgba(0, 0, 0, 0.67);
+}
+
+
+#Wordcloud1{
+    position: absolute;
+width: 281.02px;
+height: 40px;
+left: 839.77px;
+top: 26.61px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 36px;
+
+color: rgba(0, 0, 0, 0.67);
+}
+
+#Analysis1{
+/* Feedback Analysis */
+
+
+position: absolute;
+width: 201.91px;
+height: 40px;
+left: 1090.8px;
+top: 26.61px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 36px;
+
+color: rgba(0, 0, 0, 0.67);
+
+}
+
+.footer{
+    position: fixed;
+    height: 25px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #00607E;
+    font-size: smaller;
+    color: white;
+}
