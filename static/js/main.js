@@ -1,23 +1,3 @@
-// var speechRecognition = window.webkitSpeechRecognition
-// var recognition = new speechRecognition()
-// var textbox = $("#textbox")
-// var instructions = $("#instructions")
-// var content = " "
-// recognition.continuous = true
-// recognition.onStart = function(){
-//     instructions.text("Mic recording has started")
-// }
-
-//const { saveAs } = require("./FileSaver");
-
-// $("#startbutton").click(function (event) {
-//     if (content.length){
-//         content +=" "
-//     }
-//     recognition.start()
-// })
-
-
 try {
     var SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
     var recognition = new SpeechRecognition();
