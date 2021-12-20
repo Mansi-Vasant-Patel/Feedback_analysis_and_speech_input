@@ -1,3 +1,23 @@
+// var speechRecognition = window.webkitSpeechRecognition
+// var recognition = new speechRecognition()
+// var textbox = $("#textbox")
+// var instructions = $("#instructions")
+// var content = " "
+// recognition.continuous = true
+// recognition.onStart = function(){
+//     instructions.text("Mic recording has started")
+// }
+
+//const { saveAs } = require("./FileSaver");
+
+// $("#startbutton").click(function (event) {
+//     if (content.length){
+//         content +=" "
+//     }
+//     recognition.start()
+// })
+
+
 try {
     var SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
     var recognition = new SpeechRecognition();
@@ -10,7 +30,7 @@ try {
   
   
   var noteTextarea = $('#note-textarea');
-  var notesList = $('#notes');
+  var notesList = $('ul#notes');
   var instructions = $('#recording-instructions');
   var noteContent = '';
   
@@ -91,9 +111,14 @@ try {
   noteTextarea.on('input', function() {
     noteContent = $(this).val();
   })
-  
-
-
+/*var note = {'myvar': noteContent}
+ $.ajax({
+    type: "POST",
+    url: "/predict",
+    contentType: "application/json",
+    data: JSON.stringify(note),
+    dataType: "json"
+  });*/
 
   $('#save-note-btn').on('click', function(e) {
     recognition.stop();
@@ -109,16 +134,18 @@ try {
       appendNote(noteContent); //calling the function append note here on saving
 
       // Reset variables and update UI.
-      noteContent = '';
+      //noteContent = '';
       //renderNotes(getAllNotes());
-      noteTextarea.val('');
+     // noteTextarea.val('');
       instructions.text('Feedback saved successfully.Thanks for sharing!');
 
     }
         
   })
   
-  
+ 
+
+
   notesList.on('click', function(e) {
     e.preventDefault();
     var target = $(e.target);

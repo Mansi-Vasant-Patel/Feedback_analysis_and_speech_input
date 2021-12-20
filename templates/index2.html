@@ -15,9 +15,9 @@
 
     <div class="navbar col-lg-12">
         <a href="{{ url_for("home")}}"><p id="heading">Customo</p></a>
-        <a href="#"><p id="Forecasting"> Sales Forecasting </p></a>
-        <a class="#"><p id="Dashboard"> Sales Dashboard </p></a>
-        <a href="#"><p id="Wordcloud"> Feedback Wordcloud </p></a>
+        <a href="{{ url_for("SalesForecasting")}}"><p id="Forecasting"> Sales Forecasting </p></a>
+        <a class="link" href="{{ url_for("SalesDashboard")}}"><p id="Dashboard"> Sales Dashboard </p></a>
+        <a href="{{ url_for("feedbackWordCloud")}}"><p id="Wordcloud"> Feedback Wordcloud </p></a>
         <a href="{{ url_for("feedbackAnalysis")}}"><p id="Analysis"> Feedback Analysis </p></a>
     </div>
     <div class="container-fluid">
